@@ -97,16 +97,20 @@ array -> vetor */
 Isso auxiliará na entrada/saída correta dos dados manipulados pela função, além de melhorar as mensagens de erro quando ocorrem problemas. */
 
 function verificaNegativo(int $valor):string {
+    /* Early return
+    (é possível omitir o else neste caso)*/
     if($valor < 0){
         return "é negativo";
-    } else {
-        return "não é negativo";
     }
+    return "não é negativo";
 }
+
+// Código abaixo dá erro ao usar indução de tipos:
+/* <p>Número 50: <?=verificaNegativo("texto")?> </p> */
+
 ?>
 <p>Número 10: <?=verificaNegativo(10)?> </p>
 <p>Número -10: <?=verificaNegativo(-10)?> </p>
-<p>Número 50: <?=verificaNegativo("texto")?> </p>
 
 
 
