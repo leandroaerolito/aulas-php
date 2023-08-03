@@ -112,7 +112,18 @@ function verificaNegativo(int $valor):string {
 <p>Número 10: <?=verificaNegativo(10)?> </p>
 <p>Número -10: <?=verificaNegativo(-10)?> </p>
 
+<hr>
 
+<h2>Função anônima (closure, lambda)</h2>
+
+<?php
+// A função fica associada a uma variável ou constante
+$formataPreco = function(float $valor){
+    $precoFormatado = "R$".number_format($valor, 2, ",", ".");
+    return $precoFormatado;
+}  //obrigatório usar ";"
+?>
+<p>1000 formatado fica: <?=$formataPreco(1000)?> </p>
 
 </body>
 </html>
