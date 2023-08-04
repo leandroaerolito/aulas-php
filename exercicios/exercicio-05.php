@@ -42,7 +42,6 @@ $nota1 = 10;
 $nota2 = 7;
 $media = calcularMedia($nota1, $nota2);
 $situacao = verificarSituacao($media);
-
 ?>
 
 <p> <?=$media?> </p>
