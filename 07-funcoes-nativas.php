@@ -65,7 +65,35 @@ $textoBandas = implode(" - ", $bandas);
 ?>
 
 <pre> <?=var_dump($bandas)?> </pre>
-<pre> <?=var_dump($textBandas)?></pre>
+<pre> <?=var_dump($textBandas)?> </pre>
+    
+    <h3>extract</h3>
+<!-- Função que extrai chaves associativas para variáveis -->
+<?php
+$aluno = [
+    "id" => 1,
+    "nome" => "Chaves do 8",
+    "idade" => 25
+];
+
+extract($aluno)
+?>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<h3>array_sum()</h3>
+
+<?php
+/* Função para somar os valores de um array */
+
+
+?>
+
+
+
 
 
     <h2>Filtros</h2>
