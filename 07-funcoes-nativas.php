@@ -88,9 +88,11 @@ extract($aluno)
 
 <?php
 /* Função para somar os valores de um array */
-
-
+$total = array_sum($valores);
 ?>
+<p>Soma dos valores: <?=$total?> </p>
+
+<h3>array_unique</h3>
 
 
 
