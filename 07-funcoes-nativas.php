@@ -35,8 +35,26 @@ $fraseBunitinha = str_replace(
 <p> <?=$fraseFeia?> </p>
 <p> <?=$fraseBunitinha?> </p>
 
+<h3>explode() </h3>
+<?php
+/* Função que TRANSFORMA uma string em um array */
+$linguagens = "HTML - CSS - JS - PHP";
+$arrayLinguagens = explode(" - ", $linguagens);
+?>
+<pre> <?= var_dump($linguagens)?> </pre>
+<pre> <?= var_dump($arrayLinguagens)?> </pre>
+
+
 
     <h2>Numéricas</h2>
+    <h3>min, max, round</h3>
+<?php
+$valores = [10, 5, 50, 1000, 275];
+$valorQualquer = 1259.75;
+?>
+<p>Menor valor: <?=min($valores)?> </p>
+<p>Maior valor: <?=max($valores)?> </p>
+<p>Arredondamento: <?=round($valorQualquer)?> </p>
 
     <h2>Arrays</h2>
 
