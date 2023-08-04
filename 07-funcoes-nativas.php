@@ -57,6 +57,16 @@ $valorQualquer = 1259.75;
 <p>Arredondamento: <?=round($valorQualquer)?> </p>
 
     <h2>Arrays</h2>
+    <h3>implode()</h3>
+<?php
+/* Função que transforma array em string */
+$bandas = ["Rush", "Slayer", "Dio"];
+$textoBandas = implode(" - ", $bandas);
+?>
+
+<pre> <?=var_dump($bandas)?> </pre>
+<pre> <?=var_dump($textBandas)?></pre>
+
 
     <h2>Filtros</h2>
 
